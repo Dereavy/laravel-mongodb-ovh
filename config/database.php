@@ -93,6 +93,13 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'mongodb' => [
+            'driver' => env('OVH_MONGODB_DRIVER','mongodb+srv'),
+            'host' => env('OVH_MONGODB_HOST', 'localhost'),
+            'dsn' => env('OVH_MONGODB_URI'),
+            'database' => env('OVH_MONGODB_DB_NAME'),
+            'port' => env('OVH_MONGODB_PORT'),
+        ],
     ],
 
     /*
